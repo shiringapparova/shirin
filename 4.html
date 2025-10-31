@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>G'apparova Shirin | Portfolio</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    :root {
+      --main-color: #f94fce;
+      --accent-color: #5f9df7;
+      --bg-gradient: linear-gradient(135deg, #fef9ff, #f2fbff);
+      --text-color: #2c2727;
+      --card-bg: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg-gradient);
+      color: var(--text-color);
+    }
+
+    header {
+      text-align: center;
+      padding: 100px 20px 60px;
+      background: linear-gradient(135deg, #f94fce, #5f9df7);
+      color: white;
+      border-bottom-left-radius: 80px;
+      border-bottom-right-radius: 80px;
+      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+      position: relative;
+      animation: fadeDown 1.3s ease;
+    }
+
+    header img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid white;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+      margin-bottom: 20px;
+      animation: pulse 3s infinite ease-in-out;
+    }
+
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 0 20px rgba(255, 255, 255, 0.6); }
+      50% { box-shadow: 0 0 40px rgba(255, 255, 255, 0.9); }
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      font-weight: 600;
+    }
+
+    header p {
+      font-size: 1.15em;
+      opacity: 0.95;
+      margin-top: 10px;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 60px auto;
+      background: var(--card-bg);
+      border-radius: 25px;
+      padding: 35px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      animation: fadeUp 1.2s ease forwards;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.4s ease;
+    }
+
+    section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    section h2 {
+      color: var(--main-color);
+      font-size: 1.7em;
+      border-left: 6px solid var(--main-color);
+      padding-left: 12px;
+      margin-bottom: 20px;
+    }
+
+    section p {
+      line-height: 1.8;
+      font-size: 1.05em;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 15px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .contact a {
+      color: var(--main-color);
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+      color: var(--accent-color);
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--main-color);
+      color: white;
+      padding: 12px 28px;
+      border-radius: 30px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 6px 20px rgba(249, 79, 206, 0.4);
+    }
+
+    .btn:hover {
+      background: var(--accent-color);
+      box-shadow: 0 8px 25px rgba(95, 157, 247, 0.5);
+      transform: translateY(-3px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: var(--main-color);
+      color: white;
+      border-top-left-radius: 60px;
+      border-top-right-radius: 60px;
+      margin-top: 80px;
+      box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.1);
+      font-size: 0.95em;
+    }
+
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .gallery img {
+        max-width: 100%;
+      }
+      section {
+        margin: 25px 15px;
+        padding: 25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="download.jpg" alt="Shirin profili">
+    <h1>G'apparova Shirin Shodlikbekovna</h1>
+    <p>IT va tillarni o‘rganishga intiluvchi o‘quvchi ✨</p>
+  </header>
+
+  <section>
+    <h2>Men haqimda</h2>
+    <p><strong>Tug‘ilgan sana:</strong> 2011-yil 2-iyun</p>
+    <p><strong>Turar joyi:</strong> Xorazm viloyati, Xiva tumani</p>
+    <p><strong>Maktabi:</strong> 16-son maktab, Xiva tumani</p>
+    <p><strong>Oila a'zolari:</strong> 8 kishilik oila: Dadam, Oyim, 3ta opam, Men va 2ta ukam.</p>
+  </section>
+
+  <section>
+    <h2>Qiziqishlarim</h2>
+    <p>Men tillarni o‘rganishga va uchuvchilikka qiziqaman. Ingliz, rus, turk, koreys va arab tillarini o‘rganmoqchiman. 
+    Kelajakda <strong>styurdessa</strong> bo‘lib, dunyo bo‘ylab sayohat qilishni orzu qilaman. 
+    Ota-onamni Umra safariga olib borish — bu mening eng katta niyatim ❤️.</p>
+  </section>
+
+  <section>
+    <h2>Tanishtiruv</h2>
+    <p>Men Xiva tumanidagi Sayot qishlog‘ida tug‘ilganman. Hozirda 9-sinfda o‘qiyman.</p>
+    <p><strong>Yoqtirgan narsalarim:</strong></p>
+    <ul style="line-height: 1.8; margin-left: 20px;">
+      <li>Rang: Qora</li>
+      <li>Ovqat: Osh</li>
+      <li>Son: 6</li>
+      <li>Fasl: Yoz</li>
+      <li>Gul: Atirgul</li>
+      <li>Shahar: Seul, Istanbul</li>
+      <li>Hayvon: Mushuk</li>
+      <li>Meva: Apelsin</li>
+      <li>Sabzavot: Kartoshka</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Sayohat blogim</h2>
+    <p>Men sayohatni juda yaxshi ko‘raman! Quyida mening orzu qilgan joylarimdan ba’zilarini ko‘rishingiz mumkin:</p>
+    <div class="gallery">
+      <img src="korea.jpg" alt="Korea">
+      <img src="turkiya.jpg" alt="Turkiya">
+    </div>
+  </section>
+
+  <section>
+    <h2>Portfolio</h2>
+    <p>Quyida mening dizayn va IT sohasiga oid ilhomlantiruvchi rasmim joylashgan 💻✨</p>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=80" alt="Portfolio rasmi">
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Aloqa</h2>
+    <p><strong>Instagram:</strong> <a href="https://instagram.com/l2.shadl1kbekvna" target="_blank">@l2.shadl1kbekvna</a></p>
+    <br>
+    <a href="#" class="btn">📄 CV yuklab olish</a>
+  </section>
+
+  <footer>
+    <p>© 2025 G'apparova Shirin | Mening shaxsiy portfoliom</p>
+  </footer>
+</body>
+</html>
